@@ -24,4 +24,39 @@ Jetpack Compose, архитектуры MVVM, навигации и работы
 ## 🧱 Архитектура
 
 Проект построен на современной архитектуре:
+Presentation (Compose UI)
+│
+├── ViewModel (Hilt, StateFlow, events)
+│
+└── Domain (use cases, модели)
+
+
+Используемые технологии:
+
+- **Kotlin**
+- **Jetpack Compose**
+- **Navigation Compose**
+- **Hilt (Dagger)**
+- **Coil**
+- **Coroutines + StateFlow**
+- **Material 3**
+
+---
+
+## 📸 Скриншоты
+
+| Список приложений | Детали приложения |
+|-------------------|-------------------|
+| <img src="https://i.imgur.com/kTSLbdA.png" width="260"> | <img src="https://i.imgur.com/nmF07TT.png" width="260"> |
+
+*(можно заменить на реальные скриншоты из твоего проекта)*
+
+---
+
+## 🛠 Установка и запуск
+
+1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/pilyaria/RuStore.git
+
 
