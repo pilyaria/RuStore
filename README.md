@@ -49,7 +49,6 @@ Presentation (Compose UI)
 |-------------------|-------------------|
 | <img src="https://github.com/pilyaria/RuStore/blob/main/screenshoots/Screenshot_20251128_005205.png" width="260"> | <img src="https://github.com/pilyaria/RuStore/blob/main/screenshoots/Screenshot_20251128_005239.png" width="260"> |
 
-*(можно заменить на реальные скриншоты из твоего проекта)*
 
 ---
 
