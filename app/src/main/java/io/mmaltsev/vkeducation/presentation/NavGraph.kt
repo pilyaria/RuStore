@@ -9,7 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import io.mmaltsev.vkeducation.presentation.applist.AppsListScreen
 import io.mmaltsev.vkeducation.presentation.appdetails.AppDetailsScreen
-import io.mmaltsev.vkeducation.presentation.applist.FakeApps
+import io.mmaltsev.vkeducation.presentation.applist.AppCatalog
 
 
 @Composable
@@ -21,10 +21,10 @@ fun AppNavGraph() {
         startDestination = "apps_list"
     ) {
 
-        // --- Экран списка приложений ---
+        //Экран списка приложений
         composable(route = "apps_list") {
 
-            val apps = FakeApps.apps  // ← пока мок-данные
+            val apps = AppCatalog.apps  // карточки приложений
 
             AppsListScreen(
                 apps = apps,
@@ -34,15 +34,14 @@ fun AppNavGraph() {
             )
         }
 
-        // --- Экран деталей ---
+        // Экран деталей
         composable(
             route = "details/{id}",
             arguments = listOf(
                 navArgument(name = "id") { type = NavType.StringType }
             )
         ) {
-            // ВАЖНО:
-            // id автоматически попадёт в SavedStateHandle ViewModel
+
             // AppDetailsViewModel сам загрузит данные по id
             AppDetailsScreen(
                 onBack = { navController.popBackStack() }
