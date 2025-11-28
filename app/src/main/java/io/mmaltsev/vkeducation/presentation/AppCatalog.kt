@@ -3,7 +3,7 @@ package io.mmaltsev.vkeducation.presentation.applist
 import io.mmaltsev.vkeducation.domain.appdetails.AppDetails
 import io.mmaltsev.vkeducation.domain.appdetails.Category
 
-object FakeApps {
+object AppCatalog {
     val apps = listOf(
         // 1. Игра — как в примере карточки
         AppDetails(
@@ -131,10 +131,123 @@ object FakeApps {
                 "https://static.rustore.ru/imgproxy/stMiZ-VPdq9XZvKZQBhR227-pCo1NQjblesNVyWtbUg/preset:web_scr_prt_162/plain/https://static.rustore.ru/2025/11/25/41/apk/537791/content/SCREENSHOT/da47acce-30a0-4c34-9e06-0f8ddb302380.png@webp"
             ),
             description = "Официальное приложение для получения государственных услуг: документы, записи, уведомления."
-        )
+        ),
+
+            // 8. Telegram
+            AppDetails(
+                id = "8",
+                name = "Telegram",
+                developer = "Telegram FZ-LLC",
+                category = Category.SOCIAL,
+                ageRating = 12,
+                size = 85.4f,
+                iconUrl = "https://static.rustore.ru/imgproxy/Uy-gwMTn-8KHzG04tTZ0e8TVEFlrGkKIiMR5vS5AIDc/preset:web_app_icon_160/plain/https://static.rustore.ru/apk/2063507966/content/ICON/7faf2b87-4975-43f5-803a-d9ae7d180cc1.png@webp",
+                screenshotUrlList = listOf(
+                    "https://static.rustore.ru/imgproxy/XRZfRLjAfTI9qtx7zvmkJXKiHku9H8z5rCNcqY3n2SY/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2063507966/content/SCREENSHOT/9f00c0f3-b57b-4ef5-8fea-92e709f0a6cd.png@webp",
+                    "https://static.rustore.ru/imgproxy/nRFeDaiSkOF140hxMwqhJxaC4ZwwgwNxF1d-LoNv4f8/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2063507966/content/SCREENSHOT/7b26ceb3-9bf6-4573-86c4-081c47686c31.png@webp",
+                    "https://static.rustore.ru/imgproxy/Z-92D4bEi1spRGqVJDsnYBkj55Sadyd1mRkV7lQ7u1I/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2063507966/content/SCREENSHOT/60008942-48dd-41ae-9993-b33da230e3db.png@webp",
+                    "https://static.rustore.ru/imgproxy/ZTag-JmMk87cyI0GPEekd9iShnKMkcMkJZ26Ztvo9fc/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2063507966/content/SCREENSHOT/ea525d72-ccf6-4ed3-8289-3051fa1f32f5.png@webp"
+                ),
+                description = """
+                    Быстрый и безопасный мессенджер.
+                    Поддерживает облачную синхронизацию, каналы, стикеры, ботов, звонки и секретные чаты.
+                    Один из самых удобных способов общения.
+                """.trimIndent()
+            ),
+
+        // 9. RuTube
+        AppDetails(
+            id = "9",
+            name = "RuTube",
+            developer = "Google LLC",
+            category = Category.VIDEO,
+            ageRating = 12,
+            size = 120.0f,
+            iconUrl = "https://static.rustore.ru/imgproxy/6EbHeSfv610Bn7lLg7-um439wIwlxK-4wtUUGTn86dI/preset:web_app_icon_160/plain/https://static.rustore.ru/apk/246207/content/ICON/a56aebe3-565a-4bf6-942d-1f14994b9a6e.png@webp",
+            screenshotUrlList = listOf(
+                "https://static.rustore.ru/imgproxy/jVSKEPHr5fjhwAwwlPMziA3PkFX9C98YA3T_08T1-yc/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/246207/content/SCREENSHOT/30aad19a-6bd9-4712-b28b-ec67c1bff903.jpg@webp",
+                "https://static.rustore.ru/imgproxy/eQxd9jSBFMArkiH-qkcAYX_a3AyW4Qoc999pW9KT7TA/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/246207/content/SCREENSHOT/899b2b79-19db-43cd-9469-4b58e201da34.jpg@webp",
+                "https://static.rustore.ru/imgproxy/VuoTuvXgP4yFytck72H2lEoW6ClgpViTdmx3c1GSmII/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/246207/content/SCREENSHOT/21fd8e12-ca86-47c8-a5e5-ff85356512ff.jpg@webp",
+                "https://static.rustore.ru/imgproxy/AIns8f42epm51dysxuXZBWi2GXGVSKqVXgo99nBeIEY/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/246207/content/SCREENSHOT/2079f60e-29b1-40cf-a880-d58acd59a512.jpg@webp"
+            ),
+            description = """
+                    Крупнейшая платформа для видео.
+                    Смотрите каналы, прямые эфиры, короткие ролики Shorts и создавайте собственный контент.
+                """.trimIndent()
+        ),
 
 
+        // 10. Instagram
+        AppDetails(
+            id = "10",
+            name = "Instagram",
+            developer = "Meta",
+            category = Category.SOCIAL,
+            ageRating = 12,
+            size = 140.2f,
+            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg",
+            screenshotUrlList = listOf(
+            "https://upload.wikimedia.org/wikipedia/commons/5/5a/Instagram-mobile-screenshot.jpg"
+            ),
+            description = """
+                    Фото, видео, истории, Reels и общение.
+                    Следите за трендами и создавайте стильный контент.
+                """.trimIndent()
+        ),
 
+        // 11. TikTok
+        AppDetails(
+            id = "11",
+            name = "TikTok",
+            developer = "ByteDance",
+            category = Category.VIDEO,
+            ageRating = 12,
+            size = 110.0f,
+            iconUrl = "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+            screenshotUrlList = listOf(
+            "https://upload.wikimedia.org/wikipedia/en/0/09/TikTok_screenshot.jpg"
+            ),
+            description = """
+                    Короткие вертикальные видео, тренды, мемы и творчество.
+                    Делайте контент и открывайте новых авторов.
+                """.trimIndent()
+        ),
 
+       // 12. Google Maps
+        AppDetails(
+            id = "12",
+            name = "Google Maps",
+            developer = "Google LLC",
+            category = Category.MAPS,
+            ageRating = 0,
+            size = 200.0f,
+            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_Logo.svg",
+            screenshotUrlList = listOf(
+            "https://upload.wikimedia.org/wikipedia/commons/1/10/Google_Maps_screenshot.jpg"
+            ),
+            description = """
+                    Навигация, пробки, маршруты, точки интереса, кафе и транспорт.
+                    Самый удобный сервис для путешествий.
+                """.trimIndent()
+        ),
+
+        // 13. Notion
+        AppDetails(
+            id = "13",
+            name = "Notion",
+            developer = "Notion Labs",
+            category = Category.BUSINESS,
+            ageRating = 3,
+            size = 75.0f,
+            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
+            screenshotUrlList = listOf(
+            "https://upload.wikimedia.org/wikipedia/commons/f/ff/Notion_mobile_screenshot.jpg"
+            ),
+            description = """
+                    Заметки, базы данных, задачи и проекты.
+                    Универсальное рабочее пространство для учебы и работы.
+                """.trimIndent()
+        ),
     )
+
 }
