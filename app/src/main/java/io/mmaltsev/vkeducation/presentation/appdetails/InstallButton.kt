@@ -15,16 +15,18 @@ import io.mmaltsev.vkeducation.presentation.theme.VkEducationTheme
 
 @Composable
 fun InstallButton(
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
+    installed: Boolean,
+    onInstallClick: () -> Unit,
+    onUninstallClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Button(
-        onClick = onClick,
-        shape = RoundedCornerShape(8.dp),
-        contentPadding = PaddingValues(vertical = 12.dp),
-        modifier = modifier,
+        onClick = {
+            if (installed) onUninstallClick() else onInstallClick()
+        },
+        modifier = modifier
     ) {
-        Text(text = stringResource(R.string.install))
+        Text(if (installed) "Удалить" else "Установить")
     }
 }
 
@@ -33,8 +35,10 @@ fun InstallButton(
 private fun Preview() {
     VkEducationTheme {
         InstallButton(
-            onClick = {},
-            modifier = Modifier.fillMaxWidth(),
+            installed = false,
+            onInstallClick = {},
+            onUninstallClick = {},
+            modifier = Modifier.fillMaxWidth()
         )
     }
 }
