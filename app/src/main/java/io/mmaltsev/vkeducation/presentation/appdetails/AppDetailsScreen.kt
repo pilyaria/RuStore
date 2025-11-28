@@ -70,7 +70,10 @@ fun AppDetailsScreen(
                         viewModel.showUnderDevelopmentMessage()
                     },
                     onInstallClick = {
-                        viewModel.showUnderDevelopmentMessage()
+                        viewModel.installApp()
+                    },
+                    onUninstallClick = {
+                        viewModel.uninstallApp()
                     },
                     onReadMoreClick = {
                         viewModel.collapseDescription()
@@ -101,6 +104,15 @@ private fun ObserveEvents(
             when (event) {
                 is AppDetailsEvent.UnderDevelopment -> {
                     snackbarHostState.showSnackbar(underDevelopementText)
+                }
+                // "Установлено"
+                is AppDetailsEvent.Installed -> {
+                    snackbarHostState.showSnackbar("«${event.appName}» установлено")
+                }
+
+                //"Удалено"
+                is AppDetailsEvent.Uninstalled -> {
+                    snackbarHostState.showSnackbar("«${event.appName}» удалено")
                 }
             }
         }
