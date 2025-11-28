@@ -47,9 +47,8 @@ Presentation (Compose UI)
 
 | Список приложений | Детали приложения |
 |-------------------|-------------------|
-| <img src="https://i.imgur.com/kTSLbdA.png" width="260"> | <img src="https://i.imgur.com/nmF07TT.png" width="260"> |
+| <img src="https://github.com/pilyaria/RuStore/blob/main/screenshoots/Screenshot_20251128_005205.png" width="260"> | <img src="https://github.com/pilyaria/RuStore/blob/main/screenshoots/Screenshot_20251128_005239.png" width="260"> |
 
-*(можно заменить на реальные скриншоты из твоего проекта)*
 
 ---
 
