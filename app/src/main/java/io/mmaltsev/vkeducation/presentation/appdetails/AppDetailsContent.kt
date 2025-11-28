@@ -23,6 +23,7 @@ fun AppDetailsContent(
     onBackClick: () -> Unit,
     onShareClick: () -> Unit,
     onInstallClick: () -> Unit,
+    onUninstallClick: () -> Unit,
     onReadMoreClick: () -> Unit,
     onDeveloperClick: () -> Unit,
     modifier: Modifier = Modifier,
@@ -42,11 +43,15 @@ fun AppDetailsContent(
         )
         Spacer(Modifier.height(16.dp))
         InstallButton(
-            onClick = onInstallClick,
+            installed = appDetails.isInstalled,
+            onInstallClick = onInstallClick,
+            onUninstallClick = onUninstallClick,
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp)
         )
+
+
         Spacer(Modifier.height(12.dp))
 
         // Показываем скриншоты только если они есть
@@ -56,7 +61,7 @@ fun AppDetailsContent(
                 contentPadding = PaddingValues(horizontal = 16.dp),
             )
             Spacer(Modifier.height(12.dp))
-            onBackClick         }
+        }
 
         AppDescription(
             description = appDetails.description,
@@ -110,6 +115,7 @@ private fun Preview() {
             onBackClick = {},
             onShareClick = {},
             onInstallClick = {},
+            onUninstallClick = {},
             onDeveloperClick = {},
             modifier = Modifier.fillMaxSize(),
         )
