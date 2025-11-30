@@ -6,6 +6,7 @@
 - отображение скриншотов
 - описание
 - установка/удаление (мок)
+  
 В проекте используются: Mock-данные, Jetpack Compose, Hilt, Navigation, Coil.
 
 # 🗂 Эпики проекта
@@ -15,22 +16,15 @@
 
 🔧 Задачи
 
-Инициализация Android Studio проекта + GitHub репозитория (0.5 дня)
-
-Подключение Compose, Material 3, Navigation, Hilt, Coil (0.5 дня)
-
-Настройка DI (Hilt): AppModule, ViewModelInjection (0.5 дня)
-
-Создание структуры пакетов:
-
-presentation/
-
-domain/
-
-data/
-(0.5 дня)
-
-Добавление навигации NavGraph (1 день)
+- Инициализация Android Studio проекта + GitHub репозитория (0.5 дня)
+- Подключение Compose, Material 3, Navigation, Hilt, Coil (0.5 дня)
+- Настройка DI (Hilt): AppModule, ViewModelInjection (0.5 дня)
+- Создание структуры пакетов:
+  - presentation/
+  - domain/
+  - data/
+    (0.5 дня)
+- Добавление навигации NavGraph (1 день)
 
 📱 Epic 2 — Каталог приложений (Apps List)
 
