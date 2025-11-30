@@ -176,78 +176,47 @@ object AppCatalog {
                 """.trimIndent()
         ),
 
-
-        // 10. Instagram
+        // 10. VK Видео
         AppDetails(
             id = "10",
-            name = "Instagram",
-            developer = "Meta",
-            category = Category.SOCIAL,
-            ageRating = 12,
-            size = 140.2f,
-            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg",
-            screenshotUrlList = listOf(
-            "https://upload.wikimedia.org/wikipedia/commons/5/5a/Instagram-mobile-screenshot.jpg"
-            ),
-            description = """
-                    Фото, видео, истории, Reels и общение.
-                    Следите за трендами и создавайте стильный контент.
-                """.trimIndent()
-        ),
-
-        // 11. TikTok
-        AppDetails(
-            id = "11",
-            name = "TikTok",
-            developer = "ByteDance",
+            name = "VK Видео",
+            developer = "VK",
             category = Category.VIDEO,
             ageRating = 12,
             size = 110.0f,
-            iconUrl = "https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg",
+            iconUrl = "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/c1/65/6ac16503-19aa-6437-c9be-a9a0637f2bb6/VKVideoAppIcon-0-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png",
             screenshotUrlList = listOf(
-            "https://upload.wikimedia.org/wikipedia/en/0/09/TikTok_screenshot.jpg"
+                "https://static.rustore.ru/imgproxy/LZM8NmW9uzD_xoibx-d_j_ojYRv58JJoTT5Nf55hmug/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2027823295/content/SCREENSHOT/b20704c2-6b12-449f-b23a-8261e2be6f33.png@webp",
+                "https://static.rustore.ru/imgproxy/QSDUNth9_uQ9PQ8hh-oh_3a38j0N9P90F87Ykp5eGxA/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2027823295/content/SCREENSHOT/20c3e7d3-4f51-4318-ad3f-062fb8e20a3c.png@webp",
+                "https://static.rustore.ru/imgproxy/oKEg5TxTUc1NeOYVbpgYVmCE5BK0OobSrj_rDXWzPQY/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2027823295/content/SCREENSHOT/04f637c4-d928-490b-9dcf-b57fb672b9f0.png@webp",
+                "https://static.rustore.ru/imgproxy/IOMBpstneX79u_Kkm_TxSXkANG2mjjmw1TmuGV-duHs/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/2027823295/content/SCREENSHOT/8994362d-d119-48e5-b1bd-fc9d5ad1d28f.png@webp"
             ),
             description = """
-                    Короткие вертикальные видео, тренды, мемы и творчество.
-                    Делайте контент и открывайте новых авторов.
+                    Смотри кино, мультики, сериалы, ТВ онлайн, спортивные трансляции и фильмы бесплатно на всех устройствах: от смартфона до телевизора. Премьеры и блокбастеры из кинотеатров и онлайн-платформ на твоем девайсе!
                 """.trimIndent()
         ),
 
-       // 12. Google Maps
+       // 11. Альфа Банк
         AppDetails(
-            id = "12",
-            name = "Google Maps",
-            developer = "Google LLC",
-            category = Category.MAPS,
+            id = "11",
+            name = "Альфа Банк",
+            developer = "АО Альфа-Банк",
+            category = Category.FINANCE,
             ageRating = 0,
             size = 200.0f,
-            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/9/99/Google_Maps_Logo.svg",
+            iconUrl = "https://static.rustore.ru/imgproxy/FjgsClgg0crUVE9DiaueyRVtmQQMrZ7fYyNh88Gedq0/preset:web_app_icon_160/plain/https://static.rustore.ru/afb07f02-5399-4f45-a366-e49a7b3420ad@webp",
             screenshotUrlList = listOf(
-            "https://upload.wikimedia.org/wikipedia/commons/1/10/Google_Maps_screenshot.jpg"
+                "https://static.rustore.ru/imgproxy/VzcxVSXLJmC7fxIRc-cU7UPfbtjv26Nb66pXVZNclBE/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/558271/content/SCREENSHOT/d4617777-6a11-4b0e-bc2a-20a59fa8964a.jpg@webp",
+                "https://static.rustore.ru/imgproxy/zB9N7Y7WBCjs8X2pWqblbUgVwXTI7Nq9RPBvVb999zk/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/558271/content/SCREENSHOT/6c8610f0-93a7-4029-8359-54fc14d5dbcb.jpg@webp",
+                "https://static.rustore.ru/imgproxy/8PDgv-E4efGWmLBdLsMCwqRrZYXi2MvRz6BY6pPV_TU/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/558271/content/SCREENSHOT/71af38fb-4b13-4858-bfc4-a532890adbf4.jpg@webp",
+                "https://static.rustore.ru/imgproxy/BMDSkjZLhCM0DPEvQH6PkteikhrJc8PNfOHQFoC7Law/preset:web_scr_prt_162/plain/https://static.rustore.ru/apk/558271/content/SCREENSHOT/cd7b85f8-6005-4b89-992a-fdc01d818991.jpg@webp"
             ),
             description = """
-                    Навигация, пробки, маршруты, точки интереса, кафе и транспорт.
-                    Самый удобный сервис для путешествий.
+            Лучший мобильный банк пять лет подряд по версии Markswebb.
+            Мобильное приложение Альфа-Банка — это безопасный доступ к вашим счетам и банковским картам. В любой момент вы можете сделать быстрый перевод близкому человеку, проверить, сколько денег осталось, оформить кредит онлайн или пополнить счёт мобильного.
                 """.trimIndent()
         ),
 
-        // 13. Notion
-        AppDetails(
-            id = "13",
-            name = "Notion",
-            developer = "Notion Labs",
-            category = Category.BUSINESS,
-            ageRating = 3,
-            size = 75.0f,
-            iconUrl = "https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg",
-            screenshotUrlList = listOf(
-            "https://upload.wikimedia.org/wikipedia/commons/f/ff/Notion_mobile_screenshot.jpg"
-            ),
-            description = """
-                    Заметки, базы данных, задачи и проекты.
-                    Универсальное рабочее пространство для учебы и работы.
-                """.trimIndent()
-        ),
     )
 
 }
