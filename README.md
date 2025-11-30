@@ -4,7 +4,6 @@
 
 Добро пожаловать в **RuStore** — учебный проект Android-приложения, созданный для изучения
 Jetpack Compose, архитектуры MVVM, навигации и работы с данными.  
-Проект аккуратно вдохновлён интерфейсами RuStore и Google Play.
 
 ---
 
@@ -25,9 +24,7 @@ Jetpack Compose, архитектуры MVVM, навигации и работы
 
 Проект построен на современной архитектуре:
 Presentation (Compose UI)
-│
 ├── ViewModel (Hilt, StateFlow, events)
-│
 └── Domain (use cases, модели)
 
 
