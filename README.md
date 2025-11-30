@@ -24,8 +24,8 @@ Jetpack Compose, архитектуры MVVM, навигации и работы
 
 Проект построен на современной архитектуре:
 Presentation (Compose UI)
-├── ViewModel (Hilt, StateFlow, events)
-└── Domain (use cases, модели)
+- ViewModel (Hilt, StateFlow, events)
+- Domain (use cases, модели)
 
 
 Используемые технологии:
